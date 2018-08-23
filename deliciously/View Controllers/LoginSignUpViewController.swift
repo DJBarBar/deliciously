@@ -37,12 +37,23 @@ class LoginSignUpViewController: UIViewController {
         signUpButton.layer.borderColor = orange.cgColor
         signUpButton.layer.cornerRadius = signUpButton.layer.frame.height/2
         
+        //SPACING FOR SIGN UP BUTTON
+        let signUpSpacing = 1.5
+        let signUpSpacingButtonAtrributedString = NSMutableAttributedString(string: (signUpButton.titleLabel?.text)!)
+        signUpSpacingButtonAtrributedString.addAttribute(NSAttributedString.Key.kern, value: signUpSpacing, range: NSMakeRange(0, signUpSpacingButtonAtrributedString.length))
+        signUpButton.setAttributedTitle(signUpSpacingButtonAtrributedString, for: .normal)
+        
         //SPACING
         let spacing = 1.5
         let buttonAtrributedString = NSMutableAttributedString(string: (loginButton.titleLabel?.text)!)
         buttonAtrributedString.addAttribute(NSAttributedString.Key.kern, value: spacing, range: NSMakeRange(0, buttonAtrributedString.length))
         loginButton.setAttributedTitle(buttonAtrributedString, for: .normal)
         
+        //LABEL SPACING
+        let labelSpace = 1
+        let labelAttributedString = NSMutableAttributedString(string: dontHaveAccountLabel.text!)
+        labelAttributedString.addAttribute(NSAttributedString.Key.kern, value: labelSpace, range: NSMakeRange(0, labelAttributedString.length))
+        dontHaveAccountLabel.attributedText = labelAttributedString
         
     }
 
