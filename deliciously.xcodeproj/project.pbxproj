@@ -11,6 +11,9 @@
 		E85320C7212DD73800CA3276 /* Chameleon.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = E85320C5212DD73800CA3276 /* Chameleon.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		E85320CA212DD8C500CA3276 /* CustomColor.swift in Sources */ = {isa = PBXBuildFile; fileRef = E85320C9212DD8C500CA3276 /* CustomColor.swift */; };
 		E85320CD212DDA2400CA3276 /* LoginSignUpViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E85320CC212DDA2400CA3276 /* LoginSignUpViewController.swift */; };
+		E85320CF21304C2700CA3276 /* CustomButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = E85320CE21304C2700CA3276 /* CustomButton.swift */; };
+		E85320D1213055F700CA3276 /* CustomLabel.swift in Sources */ = {isa = PBXBuildFile; fileRef = E85320D0213055F700CA3276 /* CustomLabel.swift */; };
+		E85320D521308A8E00CA3276 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E85320D421308A8E00CA3276 /* LoginViewController.swift */; };
 		E89ED29B212DC14C0053C51B /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E89ED29A212DC14C0053C51B /* AppDelegate.swift */; };
 		E89ED2A0212DC14C0053C51B /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E89ED29E212DC14C0053C51B /* Main.storyboard */; };
 		E89ED2A3212DC14C0053C51B /* deliciously.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = E89ED2A1212DC14C0053C51B /* deliciously.xcdatamodeld */; };
@@ -18,6 +21,8 @@
 		E89ED2A8212DC14C0053C51B /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E89ED2A6212DC14C0053C51B /* LaunchScreen.storyboard */; };
 		E89ED2B3212DC14D0053C51B /* deliciouslyTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E89ED2B2212DC14D0053C51B /* deliciouslyTests.swift */; };
 		E89ED2BE212DC14D0053C51B /* deliciouslyUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E89ED2BD212DC14D0053C51B /* deliciouslyUITests.swift */; };
+		E8A6E7112141719E005E6141 /* CustomTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = E8A6E7102141719E005E6141 /* CustomTextField.swift */; };
+		E8A6E71321417305005E6141 /* SignUpViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E8A6E71221417305005E6141 /* SignUpViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -55,6 +60,9 @@
 		E85320C5212DD73800CA3276 /* Chameleon.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = Chameleon.framework; sourceTree = "<group>"; };
 		E85320C9212DD8C500CA3276 /* CustomColor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomColor.swift; sourceTree = "<group>"; };
 		E85320CC212DDA2400CA3276 /* LoginSignUpViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginSignUpViewController.swift; sourceTree = "<group>"; };
+		E85320CE21304C2700CA3276 /* CustomButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomButton.swift; sourceTree = "<group>"; };
+		E85320D0213055F700CA3276 /* CustomLabel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomLabel.swift; sourceTree = "<group>"; };
+		E85320D421308A8E00CA3276 /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
 		E89ED297212DC14C0053C51B /* deliciously.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = deliciously.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		E89ED29A212DC14C0053C51B /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		E89ED29F212DC14C0053C51B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -68,6 +76,8 @@
 		E89ED2B9212DC14D0053C51B /* deliciouslyUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = deliciouslyUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		E89ED2BD212DC14D0053C51B /* deliciouslyUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = deliciouslyUITests.swift; sourceTree = "<group>"; };
 		E89ED2BF212DC14D0053C51B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		E8A6E7102141719E005E6141 /* CustomTextField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomTextField.swift; sourceTree = "<group>"; };
+		E8A6E71221417305005E6141 /* SignUpViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -100,6 +110,9 @@
 			isa = PBXGroup;
 			children = (
 				E85320C9212DD8C500CA3276 /* CustomColor.swift */,
+				E85320CE21304C2700CA3276 /* CustomButton.swift */,
+				E85320D0213055F700CA3276 /* CustomLabel.swift */,
+				E8A6E7102141719E005E6141 /* CustomTextField.swift */,
 			);
 			path = Custom;
 			sourceTree = "<group>";
@@ -108,6 +121,8 @@
 			isa = PBXGroup;
 			children = (
 				E85320CC212DDA2400CA3276 /* LoginSignUpViewController.swift */,
+				E85320D421308A8E00CA3276 /* LoginViewController.swift */,
+				E8A6E71221417305005E6141 /* SignUpViewController.swift */,
 			);
 			path = "View Controllers";
 			sourceTree = "<group>";
@@ -298,10 +313,15 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E85320D521308A8E00CA3276 /* LoginViewController.swift in Sources */,
 				E85320CD212DDA2400CA3276 /* LoginSignUpViewController.swift in Sources */,
+				E85320D1213055F700CA3276 /* CustomLabel.swift in Sources */,
 				E89ED29B212DC14C0053C51B /* AppDelegate.swift in Sources */,
+				E8A6E7112141719E005E6141 /* CustomTextField.swift in Sources */,
 				E85320CA212DD8C500CA3276 /* CustomColor.swift in Sources */,
+				E8A6E71321417305005E6141 /* SignUpViewController.swift in Sources */,
 				E89ED2A3212DC14C0053C51B /* deliciously.xcdatamodeld in Sources */,
+				E85320CF21304C2700CA3276 /* CustomButton.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
