@@ -16,7 +16,16 @@ class SignUpViewController: UIViewController {
 
     }
     
-
-
+    //Pops current VC in stack
+    @IBAction func backButtonTapped(_ sender: Any) {
+        
+        navigationController?.popViewController(animated: true)
+        
+    }
+    
+    //HIDES STATUS BAR
+    override var prefersStatusBarHidden: Bool {
+        return true
+    }
 
 }

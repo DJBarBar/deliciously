@@ -23,6 +23,7 @@
 		E89ED2BE212DC14D0053C51B /* deliciouslyUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E89ED2BD212DC14D0053C51B /* deliciouslyUITests.swift */; };
 		E8A6E7112141719E005E6141 /* CustomTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = E8A6E7102141719E005E6141 /* CustomTextField.swift */; };
 		E8A6E71321417305005E6141 /* SignUpViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E8A6E71221417305005E6141 /* SignUpViewController.swift */; };
+		E8A6E7152146B9B7005E6141 /* CustomNavigationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E8A6E7142146B9B7005E6141 /* CustomNavigationController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -78,6 +79,7 @@
 		E89ED2BF212DC14D0053C51B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		E8A6E7102141719E005E6141 /* CustomTextField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomTextField.swift; sourceTree = "<group>"; };
 		E8A6E71221417305005E6141 /* SignUpViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpViewController.swift; sourceTree = "<group>"; };
+		E8A6E7142146B9B7005E6141 /* CustomNavigationController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomNavigationController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -113,6 +115,7 @@
 				E85320CE21304C2700CA3276 /* CustomButton.swift */,
 				E85320D0213055F700CA3276 /* CustomLabel.swift */,
 				E8A6E7102141719E005E6141 /* CustomTextField.swift */,
+				E8A6E7142146B9B7005E6141 /* CustomNavigationController.swift */,
 			);
 			path = Custom;
 			sourceTree = "<group>";
@@ -319,6 +322,7 @@
 				E89ED29B212DC14C0053C51B /* AppDelegate.swift in Sources */,
 				E8A6E7112141719E005E6141 /* CustomTextField.swift in Sources */,
 				E85320CA212DD8C500CA3276 /* CustomColor.swift in Sources */,
+				E8A6E7152146B9B7005E6141 /* CustomNavigationController.swift in Sources */,
 				E8A6E71321417305005E6141 /* SignUpViewController.swift in Sources */,
 				E89ED2A3212DC14C0053C51B /* deliciously.xcdatamodeld in Sources */,
 				E85320CF21304C2700CA3276 /* CustomButton.swift in Sources */,

@@ -31,7 +31,20 @@ class LoginViewController: UIViewController {
         emailTextField.attributedPlaceholder = NSAttributedString(string: emailTextField.placeholder!, attributes: [NSAttributedString.Key.foregroundColor : UIColor(hexString: "9E9E9E")])
         emailTextField.layer.sublayerTransform = CATransform3DMakeTranslation(12, 0, 0)
         
+        navigationController?.navigationBar.layer.frame.origin.y = 22
+        
     }
-
+    
+    //Pops current VC in stack
+    @IBAction func backButtonTapped(_ sender: Any) {
+        
+        navigationController?.popViewController(animated: true)
+        
+    }
+    
+    //HIDES STATUS BAR
+    override var prefersStatusBarHidden: Bool {
+        return true
+    }
 
 }
