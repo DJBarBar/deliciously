@@ -8,43 +8,58 @@
 
 import UIKit
 
-class LoginViewController: UIViewController {
+class LoginViewController: UIViewController, UITextFieldDelegate {
     
     //UI View Properties
     @IBOutlet weak var emailTextField: UITextField!
     @IBOutlet weak var passwordTextField: UITextField!
-
-    //First Load Func
+    
+    @IBOutlet weak var logInLabel: CustomLabel!
+    @IBOutlet weak var goodToSeeYouLabel: CustomLabel!
+    
+    @IBOutlet weak var backView: UIView!
+    @IBOutlet weak var topConstraint: NSLayoutConstraint!
+    
+    //First loading Func
     override func viewDidLoad() {
         super.viewDidLoad()
-        setUpProperties()
-       
-    }
-    
-    //Sets up thr UI elements
-    func setUpProperties() {
+        setUpViewProperties()
         
-        //Textfield
-        emailTextField.layer.borderWidth = 1
-        emailTextField.layer.borderColor = UIColor(hexString: "E0E0E0").cgColor
-        
-        emailTextField.attributedPlaceholder = NSAttributedString(string: emailTextField.placeholder!, attributes: [NSAttributedString.Key.foregroundColor : UIColor(hexString: "9E9E9E")])
-        emailTextField.layer.sublayerTransform = CATransform3DMakeTranslation(12, 0, 0)
-        
-        navigationController?.navigationBar.layer.frame.origin.y = 22
-        
-    }
-    
-    //Pops current VC in stack
-    @IBAction func backButtonTapped(_ sender: Any) {
-        
-        navigationController?.popViewController(animated: true)
-        
-    }
-    
-    //HIDES STATUS BAR
-    override var prefersStatusBarHidden: Bool {
-        return true
     }
 
+    //Sets up the view properties
+    func setUpViewProperties() {
+        //self.navigationController?.navigationBar.frame.origin.y = 20
+    }
+    
+    
 }
+
+
+
+//MARK: -Keyboard Hide/Show
+extension LoginViewController {
+    
+    func textFieldDidBeginEditing(_ textField: UITextField) {
+        self.navigationController?.navigationBar.isHidden = true
+        self.logInLabel.isHidden = true
+        self.goodToSeeYouLabel.isHidden = true
+        self.topConstraint.constant = CGFloat(10)
+    }
+    
+    func textFieldDidEndEditing(_ textField: UITextField) {
+        topConstraint.constant = CGFloat(74)
+    }
+    
+    func textFieldShouldReturn(_ textField: UITextField) -> Bool {
+        self.navigationController?.navigationBar.isHidden = false
+        self.logInLabel.isHidden = false
+        self.goodToSeeYouLabel.isHidden = false
+        self.topConstraint.constant = CGFloat(74)
+        textField.resignFirstResponder()
+        return true
+    }
+    
+    
+}
+

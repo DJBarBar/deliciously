@@ -10,39 +10,32 @@ import UIKit
 
 class CustomLabel: UILabel {
 
-    //FIRST FUNC TO LOAD
+    //First Laoding Func
     override init(frame: CGRect) {
         super.init(frame: frame)
-        
-        defaultSetup()
-        
+        setUpTextSpacing()
     }
     
-    //FIRST REQUIRED TO LOAD
+    //First Required loading func
     required init?(coder aDecoder: NSCoder) {
         super.init(coder: aDecoder)
-        
-        defaultSetup()
-        
+        setUpTextSpacing()
     }
     
-    //SET
-    func defaultSetup() {
-        
-        let labelSpace = 1
-        let labelAttributedString = NSMutableAttributedString(string: text!)
-        labelAttributedString.addAttribute(NSAttributedString.Key.kern, value: labelSpace, range: NSMakeRange(0, labelAttributedString.length))
-        attributedText = labelAttributedString
-        
+    //Sets up the default text
+    //spacing to 1.5
+    func setUpTextSpacing(){
+        let labelSpacing = 1.5
+        let labelAttributedString = NSMutableAttributedString(string: self.text!)
+        labelAttributedString.addAttribute(NSAttributedString.Key.kern, value: labelSpacing, range: NSMakeRange(0, labelAttributedString.length))
+        self.attributedText = labelAttributedString
     }
     
-    //SETS THE SPACING OF TEXT
-    func setSpacing(space: CGFloat) {
-        
-        let labelAttributedString = NSMutableAttributedString(string: text!)
+    //Sets up the spacing of text
+    func setSpacing(space: CGFloat){
+        let labelAttributedString = NSMutableAttributedString(string: self.text!)
         labelAttributedString.addAttribute(NSAttributedString.Key.kern, value: space, range: NSMakeRange(0, labelAttributedString.length))
-        attributedText = labelAttributedString
-        
+        self.attributedText = labelAttributedString
     }
     
 }

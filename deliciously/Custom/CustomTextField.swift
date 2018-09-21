@@ -13,26 +13,26 @@ class CustomTextField: UITextField {
     //First loading func
     override init(frame: CGRect) {
         super.init(frame: frame)
-        defaultSetUp()
+        setupViewProperties()
     }
     
-    //First required
+    //First loading required func
     required init?(coder aDecoder: NSCoder) {
         super.init(coder: aDecoder)
-        defaultSetUp()
+        setupViewProperties()
     }
     
-    //Sets up textfield to custom
-    func defaultSetUp() {
+    //Makes the textfield border thin with
+    //color and moves the placeholder to the
+    //right with color
+    func setupViewProperties(){
+        self.layer.borderWidth = 1.0
+        self.layer.cornerRadius = 1
         
-        //Textfield
-        layer.borderWidth = 1
-        layer.borderColor = UIColor(hexString: "E0E0E0").cgColor
+        self.layer.borderColor = UIColor(hexString: "E0E0E0", withAlpha: 1).cgColor
+        self.attributedPlaceholder = NSAttributedString(string: placeholder!, attributes:[NSAttributedString.Key.foregroundColor : UIColor(hexString: "9E9E9E")])
         
-        attributedPlaceholder = NSAttributedString(string: placeholder!, attributes: [NSAttributedString.Key.foregroundColor : UIColor(hexString: "9E9E9E")])
-        layer.sublayerTransform = CATransform3DMakeTranslation(12, 0, 0)
-        
-        
+        self.layer.sublayerTransform = CATransform3DMakeTranslation(12, 0, 0)
     }
     
 }

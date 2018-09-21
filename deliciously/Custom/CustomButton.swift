@@ -10,52 +10,40 @@ import UIKit
 
 class CustomButton: UIButton {
 
-    //FIRST LOADING FUNC
+    //First loading Func
     override init(frame: CGRect) {
         super.init(frame: frame)
-        defaultSetup()
+        setCustomViewProperty()
     }
-    
-    //FIRST REQUIRED LOADING FUNC
+    //First required Func
     required init?(coder aDecoder: NSCoder) {
         super.init(coder: aDecoder)
-        defaultSetup()
+        setCustomViewProperty()
     }
     
-    //CUSTOMIZES THE BUTTON TO ORANGE BACKGROUND COLOR
-    func defaultSetup() {
+    //Sets the corner radius, custom color and
+    //sets spacing for the title label
+    func setCustomViewProperty(){
+        let orange = CustomColor(withFrame: frame).getColor()
         
-        let orange = CustomColor(withFrame: frame).getOrangeColor()
+        self.backgroundColor = orange
+        self.layer.cornerRadius = 25
+        self.layer.masksToBounds = true
         
-        layer.backgroundColor = orange.cgColor
-        layer.cornerRadius = layer.frame.height/2
-        layer.masksToBounds = true
-        
-        //SPACING
         let spacing = 1.5
-        let buttonAtrributedString = NSMutableAttributedString(string: (titleLabel?.text)!)
-        buttonAtrributedString.addAttribute(NSAttributedString.Key.kern, value: spacing, range: NSMakeRange(0, buttonAtrributedString.length))
-        self.setAttributedTitle(buttonAtrributedString, for: .normal)
-        
+        let attributedString = NSMutableAttributedString(string: (self.titleLabel?.text!)!)
+        attributedString.addAttribute(NSAttributedString.Key.kern, value: spacing, range: NSMakeRange(0, attributedString.length))
+        self.setAttributedTitle(attributedString, for: .normal)
     }
     
-    func makeCustomWhiteButton() {
-        
-        let orange = CustomColor(withFrame: frame).getOrangeColor()
-        
-        //SIGN UP BUTTON
-        layer.borderWidth = 2
-        backgroundColor = .white
-        layer.borderColor = orange.cgColor
-        layer.cornerRadius = layer.frame.height/2
-        layer.masksToBounds = true
-        
-        //SPACING FOR SIGN UP BUTTON
-        let signUpSpacing = 1.5
-        let signUpSpacingButtonAtrributedString = NSMutableAttributedString(string: (titleLabel?.text)!)
-        signUpSpacingButtonAtrributedString.addAttribute(NSAttributedString.Key.kern, value: signUpSpacing, range: NSMakeRange(0, signUpSpacingButtonAtrributedString.length))
-        self.setAttributedTitle(signUpSpacingButtonAtrributedString, for: .normal)
-        
+    //Sets the backgroud to white and makes
+    //the border thin with a custom color
+    func makeBackgroundWhiteWithBorder(){
+        let orange = CustomColor(withFrame: frame).getColor()
+        self.backgroundColor = UIColor.white
+        self.layer.borderWidth = 1.5
+        self.layer.borderColor = orange.cgColor
+        self.layer.cornerRadius = 25
     }
     
 }

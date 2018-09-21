@@ -7,6 +7,7 @@
 //
 
 import UIKit
+import Chameleon
 
 class LoginSignUpViewController: UIViewController {
     
@@ -14,26 +15,24 @@ class LoginSignUpViewController: UIViewController {
     @IBOutlet weak var loginButton: CustomButton!
     @IBOutlet weak var dontHaveAccountLabel: UILabel!
     @IBOutlet weak var signUpButton: CustomButton!
-    @IBOutlet weak var deliciouslyLabel: CustomLabel!
+
     
+    //First Loading Func
     override func viewDidLoad() {
         super.viewDidLoad()
-        
-        setUpProperties()
+        setUpViews()
+    }
+    
+    
+    //Set up UI properties
+    func setUpViews() {
+        self.navigationController?.navigationBar.frame.origin.y = 20
+        signUpButton.makeBackgroundWhiteWithBorder()
         
     }
     
-    //Set up the UI Elements
-    func setUpProperties() {
-        
-        signUpButton.makeCustomWhiteButton()
-        deliciouslyLabel.setSpacing(space: 1.75)
-        
-    }
-    
-    //HIDES STATUS BAR
-    override var prefersStatusBarHidden: Bool {
+    //Hides status bar
+    override var prefersStatusBarHidden: Bool{
         return true
     }
-    
 }
