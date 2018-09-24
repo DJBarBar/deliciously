@@ -11,11 +11,13 @@ import Chameleon
 
 class LoginSignUpViewController: UIViewController {
     
+    
+    
     //MARK: Outlets
     @IBOutlet weak var loginButton: CustomButton!
     @IBOutlet weak var dontHaveAccountLabel: UILabel!
     @IBOutlet weak var signUpButton: CustomButton!
-
+    
     
     //First Loading Func
     override func viewDidLoad() {

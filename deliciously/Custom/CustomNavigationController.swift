@@ -9,11 +9,11 @@
 import UIKit
 
 class CustomNavigationController: UINavigationController {
-
+    
     //First Loading Func
     override func viewDidLoad() {
         super.viewDidLoad()
-
+        
         super.viewDidLoad()
         
         //Makes the Navigation Bar invisible and clear
@@ -27,6 +27,6 @@ class CustomNavigationController: UINavigationController {
         
     }
     
-
-
+    
+    
 }

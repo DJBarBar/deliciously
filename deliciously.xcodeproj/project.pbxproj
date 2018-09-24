@@ -24,6 +24,7 @@
 		E8A6E7112141719E005E6141 /* CustomTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = E8A6E7102141719E005E6141 /* CustomTextField.swift */; };
 		E8A6E71321417305005E6141 /* SignUpViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E8A6E71221417305005E6141 /* SignUpViewController.swift */; };
 		E8A6E7152146B9B7005E6141 /* CustomNavigationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E8A6E7142146B9B7005E6141 /* CustomNavigationController.swift */; };
+		E8CA00DA2159274100DB2E9C /* CustomTabBarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E8CA00D92159274100DB2E9C /* CustomTabBarController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -80,6 +81,7 @@
 		E8A6E7102141719E005E6141 /* CustomTextField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomTextField.swift; sourceTree = "<group>"; };
 		E8A6E71221417305005E6141 /* SignUpViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpViewController.swift; sourceTree = "<group>"; };
 		E8A6E7142146B9B7005E6141 /* CustomNavigationController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomNavigationController.swift; sourceTree = "<group>"; };
+		E8CA00D92159274100DB2E9C /* CustomTabBarController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomTabBarController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -116,6 +118,7 @@
 				E85320D0213055F700CA3276 /* CustomLabel.swift */,
 				E8A6E7102141719E005E6141 /* CustomTextField.swift */,
 				E8A6E7142146B9B7005E6141 /* CustomNavigationController.swift */,
+				E8CA00D92159274100DB2E9C /* CustomTabBarController.swift */,
 			);
 			path = Custom;
 			sourceTree = "<group>";
@@ -321,6 +324,7 @@
 				E85320D1213055F700CA3276 /* CustomLabel.swift in Sources */,
 				E89ED29B212DC14C0053C51B /* AppDelegate.swift in Sources */,
 				E8A6E7112141719E005E6141 /* CustomTextField.swift in Sources */,
+				E8CA00DA2159274100DB2E9C /* CustomTabBarController.swift in Sources */,
 				E85320CA212DD8C500CA3276 /* CustomColor.swift in Sources */,
 				E8A6E7152146B9B7005E6141 /* CustomNavigationController.swift in Sources */,
 				E8A6E71321417305005E6141 /* SignUpViewController.swift in Sources */,

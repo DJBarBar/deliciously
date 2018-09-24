@@ -9,7 +9,7 @@
 import UIKit
 
 class CustomLabel: UILabel {
-
+    
     //First Laoding Func
     override init(frame: CGRect) {
         super.init(frame: frame)

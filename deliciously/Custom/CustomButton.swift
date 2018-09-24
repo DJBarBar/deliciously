@@ -9,7 +9,7 @@
 import UIKit
 
 class CustomButton: UIButton {
-
+    
     //First loading Func
     override init(frame: CGRect) {
         super.init(frame: frame)

@@ -26,7 +26,14 @@ class LoginViewController: UIViewController, UITextFieldDelegate {
         setUpViewProperties()
         
     }
-
+    
+    //Pops current VC in stack
+    @IBAction func backButtonTapped(_ sender: Any) {
+        
+        navigationController?.popViewController(animated: true)
+        
+    }
+    
     //Sets up the view properties
     func setUpViewProperties() {
         //self.navigationController?.navigationBar.frame.origin.y = 20
